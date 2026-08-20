@@ -182,18 +182,19 @@ if (buyButton) {
 
 if (productModel) {
 
-    let lastInteraction = Date.now();
+    productModel.addEventListener("load", () => {
 
+        console.log("Modelo 3D cargado correctamente.");
 
-    productModel.addEventListener(
-        "pointerdown",
-        () => {
+        const modelError = document.getElementById("modelError");
 
-            lastInteraction = Date.now();
-
+        if (modelError) {
+            modelError.style.display = "none";
         }
-    );
 
+    });
+
+}
 
     /*
     Pausar rotación mientras el usuario
