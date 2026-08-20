@@ -1,113 +1,212 @@
-# BogotaFitDeals — index.html
+# index.html — BogotaFitDeals
 
 ```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>BogotaFitDeals | adidas Terrex</title>
 
-    <meta name="description" content="Adidas Terrex Skychaser AX5 GORE-TEX para hombre. Compra online y explora el producto en realidad aumentada.">
+    <meta
+        name="description"
+        content="Adidas Terrex Skychaser AX5 GORE-TEX. Descubre, explora en 3D y visualiza el producto mediante realidad aumentada."
+    >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- GOOGLE FONT -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
-    <!-- Google Model Viewer -->
+    <!-- GOOGLE MODEL VIEWER -->
     <script
         type="module"
         src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     </script>
+
 </head>
+
 
 <body>
 
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
 <header class="header">
+
     <div class="container nav">
 
-        <a href="#inicio" class="logo">
+        <a
+            href="#inicio"
+            class="logo"
+        >
             Bogota<span>Fit</span>Deals
         </a>
 
+
         <nav class="menu">
-            <a href="#producto">Producto</a>
-            <a href="#tecnologia">Tecnología</a>
-            <a href="#experiencia">AR</a>
-            <a href="#comprar" class="nav-button">Comprar</a>
+
+            <a href="#producto">
+                Producto
+            </a>
+
+            <a href="#tecnologia">
+                Tecnología
+            </a>
+
+            <a href="#experiencia">
+                AR
+            </a>
+
+            <a
+                href="#comprar"
+                class="nav-button"
+            >
+                Comprar
+            </a>
+
         </nav>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Abrir menú"
+        >
             ☰
         </button>
 
     </div>
+
 </header>
 
 
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
 <main>
+
+
 
 <!-- =====================================================
      HERO
 ===================================================== -->
 
-<section class="hero" id="inicio">
+<section
+    class="hero"
+    id="inicio"
+>
 
     <div class="hero-background"></div>
 
+
     <div class="container hero-grid">
 
+
+        <!-- HERO TEXT -->
+
         <div class="hero-content">
+
 
             <div class="eyebrow">
                 BOGOTAFITDEALS / OUTDOOR
             </div>
+
 
             <h1>
                 ADIDAS
                 <span>TERREX</span>
             </h1>
 
+
             <h2>
-                SKYCHASER AX5<br>
+                SKYCHASER AX5
+                <br>
                 GORE-TEX
             </h2>
 
+
             <p class="hero-description">
-                Un tenis deportivo para hombre pensado para
-                acompañarte en caminatas, entrenamiento,
-                gimnasio y uso diario.
+
+                Un tenis deportivo para hombre diseñado
+                para acompañarte en caminatas,
+                entrenamiento, gimnasio y uso diario.
+
             </p>
+
+
+
+            <!-- PRECIO -->
 
             <div class="price-box">
 
+
                 <div class="old-price">
+
                     Precio anterior
-                    <del>$365.663</del>
+
+                    <del>
+                        $365.663
+                    </del>
+
                 </div>
+
 
                 <div class="current-price">
                     $260.000
                 </div>
 
+
                 <div class="saving">
                     AHORRAS $105.663
                 </div>
 
+
             </div>
+
+
+
+            <!-- BOTONES -->
 
             <div class="hero-buttons">
 
-                <a href="#comprar" class="button primary">
+
+                <a
+                    href="#comprar"
+                    class="button primary"
+                >
                     COMPRAR AHORA
                 </a>
+
 
                 <a
                     href="https://mywebar.com/p/Project_1_5gw0ks9qcr2322"
@@ -118,149 +217,288 @@
                     VER EN AR ↗
                 </a>
 
+
             </div>
 
+
+
+            <!-- BENEFICIOS -->
+
             <div class="hero-info">
-                <span>✓ GORE-TEX</span>
-                <span>✓ LIGHTMOTION</span>
-                <span>✓ CONTINENTAL™</span>
+
+                <span>
+                    ✓ GORE-TEX
+                </span>
+
+                <span>
+                    ✓ LIGHTMOTION
+                </span>
+
+                <span>
+                    ✓ CONTINENTAL™
+                </span>
+
             </div>
+
 
         </div>
 
 
+
         <!-- =================================================
-             GLB
+             PRODUCTO 3D
         ================================================== -->
 
         <div class="hero-product">
 
+
             <div class="product-glow"></div>
+
 
             <div class="product-label">
                 MODELO 3D / 360°
             </div>
 
+
+            <!--
+
+                IMPORTANTE:
+
+                El archivo está en la raíz del repositorio:
+
+                adidas_terrex.glb
+
+            -->
+
             <model-viewer
+
                 id="productModel"
+
                 src="adidas_terrex.glb"
-                alt="adidas Terrex Skychaser AX5 GORE-TEX"
+
+                alt="Adidas Terrex Skychaser AX5 GORE-TEX"
+
                 camera-controls
+
                 auto-rotate
+
                 rotation-per-second="25deg"
+
                 shadow-intensity="1"
+
                 exposure="1"
+
                 camera-orbit="0deg 75deg 105%"
+
                 interaction-prompt="auto"
+
                 ar
+
                 ar-modes="webxr scene-viewer quick-look"
+
                 loading="eager"
+
+                reveal="auto"
+
             >
 
-                <div class="model-loading" slot="progress-bar">
+                <div
+                    class="model-loading"
+                    slot="progress-bar"
+                >
                     CARGANDO PRODUCTO...
                 </div>
 
             </model-viewer>
 
-            <div class="drag-message">
+
+            <div
+                class="drag-message"
+            >
                 ↔ ARRASTRA PARA ROTAR
             </div>
 
-            <div id="modelError" class="model-error">
+
+            <div
+                id="modelError"
+                class="model-error"
+            >
                 No se pudo cargar el modelo 3D.
             </div>
 
+
         </div>
+
 
     </div>
 
 </section>
+
 
 
 <!-- =====================================================
      PRODUCTO
 ===================================================== -->
 
-<section class="product-section" id="producto">
+<section
+    class="product-section"
+    id="producto"
+>
+
 
     <div class="container">
 
+
         <div class="section-heading">
 
-            <span>01 / PRODUCTO</span>
+
+            <span>
+                01 / PRODUCTO
+            </span>
+
 
             <h2>
+
                 UN TENIS.
+
                 <br>
-                <strong>MÁS POSIBILIDADES.</strong>
+
+                <strong>
+                    MÁS POSIBILIDADES.
+                </strong>
+
             </h2>
 
+
             <p>
-                El adidas Terrex Skychaser AX5 GORE-TEX combina
-                comodidad, protección y tracción para acompañarte
-                en diferentes momentos del día.
+
+                El adidas Terrex Skychaser AX5 GORE-TEX
+                combina comodidad, protección y tracción
+                para acompañarte en diferentes momentos
+                del día.
+
             </p>
 
+
         </div>
+
 
 
         <div class="use-grid">
 
-            <article class="use-card">
-                <div class="card-number">01</div>
-                <div class="card-icon">🥾</div>
-                <h3>CAMINATA</h3>
-                <p>
-                    Diseñado para recorrer diferentes terrenos
-                    con estabilidad y comodidad.
-                </p>
-            </article>
 
             <article class="use-card">
-                <div class="card-number">02</div>
-                <div class="card-icon">🏋️</div>
-                <h3>ENTRENAMIENTO</h3>
+
+                <div class="card-number">
+                    01
+                </div>
+
+                <div class="card-icon">
+                    🥾
+                </div>
+
+                <h3>
+                    CAMINATA
+                </h3>
+
+                <p>
+                    Diseñado para recorrer diferentes
+                    terrenos con estabilidad y comodidad.
+                </p>
+
+            </article>
+
+
+
+            <article class="use-card">
+
+                <div class="card-number">
+                    02
+                </div>
+
+                <div class="card-icon">
+                    🏋️
+                </div>
+
+                <h3>
+                    ENTRENAMIENTO
+                </h3>
+
                 <p>
                     Una opción versátil para acompañar
                     tus actividades deportivas.
                 </p>
+
             </article>
 
+
+
             <article class="use-card">
-                <div class="card-number">03</div>
-                <div class="card-icon">🏙️</div>
-                <h3>USO DIARIO</h3>
+
+                <div class="card-number">
+                    03
+                </div>
+
+                <div class="card-icon">
+                    🏙️
+                </div>
+
+                <h3>
+                    USO DIARIO
+                </h3>
+
                 <p>
                     Un diseño deportivo que funciona
                     también en tus recorridos urbanos.
                 </p>
+
             </article>
 
+
+
             <article class="use-card">
-                <div class="card-number">04</div>
-                <div class="card-icon">⛰️</div>
-                <h3>AVENTURA</h3>
+
+                <div class="card-number">
+                    04
+                </div>
+
+                <div class="card-icon">
+                    ⛰️
+                </div>
+
+                <h3>
+                    AVENTURA
+                </h3>
+
                 <p>
                     Preparado para acompañarte cuando
                     decides salir de la rutina.
                 </p>
+
             </article>
 
+
         </div>
+
 
     </div>
 
 </section>
 
 
+
 <!-- =====================================================
      TECNOLOGÍA
 ===================================================== -->
 
-<section class="technology" id="tecnologia">
+<section
+    class="technology"
+    id="tecnologia"
+>
+
 
     <div class="container technology-grid">
+
 
         <div class="technology-image">
 
@@ -269,103 +507,156 @@
             </div>
 
             <div class="tech-small">
-                PERFORMANCE<br>
+
+                PERFORMANCE
+                <br>
                 / OUTDOOR
+
             </div>
 
         </div>
 
 
+
         <div class="technology-content">
+
 
             <span class="section-tag">
                 02 / TECNOLOGÍA
             </span>
 
+
             <h2>
+
                 TECNOLOGÍA
-                <strong>QUE SE SIENTE.</strong>
+
+                <strong>
+                    QUE SE SIENTE.
+                </strong>
+
             </h2>
 
 
+
             <div class="tech-item">
 
-                <div class="tech-number">01</div>
+                <div class="tech-number">
+                    01
+                </div>
 
                 <div>
-                    <h3>GORE-TEX</h3>
+
+                    <h3>
+                        GORE-TEX
+                    </h3>
 
                     <p>
-                        Protección impermeable que ayuda a mantener
-                        tus pies secos durante tus recorridos.
+                        Protección impermeable que ayuda
+                        a mantener tus pies secos durante
+                        tus recorridos.
                     </p>
+
                 </div>
 
             </div>
 
 
+
             <div class="tech-item">
 
-                <div class="tech-number">02</div>
+                <div class="tech-number">
+                    02
+                </div>
 
                 <div>
-                    <h3>LIGHTMOTION</h3>
+
+                    <h3>
+                        LIGHTMOTION
+                    </h3>
 
                     <p>
-                        Amortiguación ligera pensada para ofrecer
-                        comodidad durante el movimiento.
+                        Amortiguación ligera pensada para
+                        ofrecer comodidad durante
+                        el movimiento.
                     </p>
+
                 </div>
 
             </div>
 
 
+
             <div class="tech-item">
 
-                <div class="tech-number">03</div>
+                <div class="tech-number">
+                    03
+                </div>
 
                 <div>
-                    <h3>CONTINENTAL™</h3>
+
+                    <h3>
+                        CONTINENTAL™
+                    </h3>
 
                     <p>
                         Suela desarrollada para proporcionar
                         tracción en diferentes superficies.
                     </p>
+
                 </div>
 
             </div>
 
+
         </div>
+
 
     </div>
 
 </section>
 
 
+
 <!-- =====================================================
-     EXPERIENCIA AR + QR
+     EXPERIENCIA AR
 ===================================================== -->
 
-<section class="experience" id="experiencia">
+<section
+    class="experience"
+    id="experiencia"
+>
+
 
     <div class="container experience-box">
 
+
         <div class="experience-content">
+
 
             <span>
                 03 / EXPERIENCIA
             </span>
 
+
             <h2>
+
                 LLEVÁLOS
-                <strong>A TU ESPACIO.</strong>
+
+                <strong>
+                    A TU ESPACIO.
+                </strong>
+
             </h2>
 
+
             <p>
-                Escanea el código QR o abre la experiencia
-                directamente para visualizar el adidas Terrex
-                mediante realidad aumentada.
+
+                Escanea el código QR para explorar
+                el adidas Terrex mediante realidad
+                aumentada.
+
             </p>
+
 
             <a
                 href="https://mywebar.com/p/Project_1_5gw0ks9qcr2322"
@@ -376,35 +667,50 @@
                 ABRIR EXPERIENCIA AR ↗
             </a>
 
+
         </div>
 
 
+
+        <!-- QR REAL -->
+
         <div class="qr-placeholder">
+
 
             <div class="qr-frame">
 
+
                 <div class="qr-corner top-left"></div>
+
                 <div class="qr-corner top-right"></div>
+
                 <div class="qr-corner bottom-left"></div>
+
                 <div class="qr-corner bottom-right"></div>
 
+
                 <img
-                    src="https://mywebar.com/qr/965966"
-                    alt="Código QR para visualizar adidas Terrex en realidad aumentada"
+                    src="QR.png"
+                    alt="Código QR de realidad aumentada de BogotaFitDeals"
                     class="qr-image"
                 >
 
+
             </div>
+
 
             <p>
                 ESCANEA PARA VER EN AR
             </p>
 
+
         </div>
+
 
     </div>
 
 </section>
+
 
 
 <!-- =====================================================
@@ -413,51 +719,71 @@
 
 <section class="price-section">
 
+
     <div class="container">
 
+
         <div class="price-content">
+
 
             <span>
                 04 / BOGOTAFITDEALS DEAL
             </span>
 
+
             <h2>
+
                 TU PRÓXIMO
-                <strong>RECORRIDO.</strong>
+
+                <strong>
+                    RECORRIDO.
+                </strong>
+
             </h2>
 
 
+
             <div class="anchor-price">
+
 
                 <p>
                     PRECIO ANTERIOR
                 </p>
 
+
                 <del>
                     $365.663
                 </del>
 
+
                 <div class="price-line"></div>
+
 
                 <p>
                     PRECIO BOGOTAFITDEALS
                 </p>
 
+
                 <strong>
                     $260.000
                 </strong>
+
 
                 <div class="discount">
                     AHORRAS $105.663
                 </div>
 
+
             </div>
 
 
             <p class="price-explanation">
+
                 Aprovecha el precio especial disponible
                 en BogotaFitDeals.
+
             </p>
+
 
             <a
                 href="#comprar"
@@ -466,59 +792,125 @@
                 QUIERO MIS TERREX
             </a>
 
+
         </div>
+
 
     </div>
 
 </section>
 
 
+
 <!-- =====================================================
      COMPRA
 ===================================================== -->
 
-<section class="buy-section" id="comprar">
+<section
+    class="buy-section"
+    id="comprar"
+>
+
 
     <div class="container buy-grid">
 
+
         <div class="buy-product">
+
 
             <span>
                 ADIDAS TERREX
             </span>
 
+
             <h2>
                 SKYCHASER AX5
             </h2>
+
 
             <p>
                 GORE-TEX / HOMBRE
             </p>
 
+
             <div class="mini-price">
                 $260.000
             </div>
 
+
         </div>
 
 
+
         <div class="buy-form">
+
 
             <h3>
                 ELIGE TU TALLA
             </h3>
 
+
             <div class="sizes">
 
-                <button class="size" type="button">7</button>
-                <button class="size" type="button">8</button>
-                <button class="size" type="button">8.5</button>
-                <button class="size" type="button">9</button>
-                <button class="size" type="button">9.5</button>
-                <button class="size" type="button">10</button>
-                <button class="size" type="button">11</button>
+
+                <button
+                    class="size"
+                    type="button"
+                >
+                    7
+                </button>
+
+
+                <button
+                    class="size"
+                    type="button"
+                >
+                    8
+                </button>
+
+
+                <button
+                    class="size"
+                    type="button"
+                >
+                    8.5
+                </button>
+
+
+                <button
+                    class="size"
+                    type="button"
+                >
+                    9
+                </button>
+
+
+                <button
+                    class="size"
+                    type="button"
+                >
+                    9.5
+                </button>
+
+
+                <button
+                    class="size"
+                    type="button"
+                >
+                    10
+                </button>
+
+
+                <button
+                    class="size"
+                    type="button"
+                >
+                    11
+                </button>
+
 
             </div>
+
 
             <p id="sizeMessage">
                 Selecciona una talla.
@@ -533,17 +925,23 @@
                 COMPRAR AHORA
             </a>
 
+
             <small>
                 Compra segura · Atención personalizada
             </small>
 
+
         </div>
+
 
     </div>
 
 </section>
 
+
+
 </main>
+
 
 
 <!-- =====================================================
@@ -552,41 +950,74 @@
 
 <footer>
 
+
     <div class="container footer-content">
+
 
         <div>
 
+
             <div class="logo">
+
                 Bogota<span>Fit</span>Deals
+
             </div>
+
 
             <p>
                 Movimiento. Estilo. Aventura.
             </p>
 
+
         </div>
+
 
 
         <div class="footer-links">
 
-            <a href="#producto">Producto</a>
-            <a href="#tecnologia">Tecnología</a>
-            <a href="#experiencia">AR</a>
-            <a href="#comprar">Comprar</a>
+
+            <a href="#producto">
+                Producto
+            </a>
+
+
+            <a href="#tecnologia">
+                Tecnología
+            </a>
+
+
+            <a href="#experiencia">
+                AR
+            </a>
+
+
+            <a href="#comprar">
+                Comprar
+            </a>
+
 
         </div>
+
 
 
         <div class="copyright">
+
             © 2026 BogotaFitDeals
+
         </div>
 
+
     </div>
+
 
 </footer>
 
 
+
+<!-- JAVASCRIPT -->
+
 <script src="script.js"></script>
+
 
 </body>
 </html>
